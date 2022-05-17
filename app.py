@@ -18,11 +18,11 @@ migrate = Migrate(app, db)
 app.register_blueprint(about_api.blueprint)
 app.register_blueprint(auth_api.blueprint)
 app.register_blueprint(listfiles_api.blueprint)
-# app.register_blueprint(addtag_api.blueprint)
+app.register_blueprint(addtag_api.blueprint)
 # app.register_blueprint(createfile_api.blueprint)
 app.register_blueprint(readfile_api.blueprint)
-# app.register_blueprint(editfile_api.blueprint)
-# app.register_blueprint(trainmodel_api.blueprint)
+app.register_blueprint(editfile_api.blueprint)
+app.register_blueprint(trainmodel_api.blueprint)
 
 
 
